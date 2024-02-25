@@ -31,6 +31,6 @@ CREATE TABLE IF NOT EXISTS data_transmissions (
     gsm_signal VARCHAR(10),  -- Added GSM signal strength
     rawGyro VARCHAR(255),  -- Added raw gyro data
     normGyro VARCHAR(255),  -- Added normalized gyro data
-    Valid_point CHAR(1),  -- Added a char field for valid point
+    valid_point CHAR(1),  -- Added a char field for valid point
     FOREIGN KEY (device_id) REFERENCES devices(id)
 );
