@@ -72,6 +72,14 @@ services:
       mysql:
         condition: service_started
 
+  mqtt-exporter:
+    build:
+      context: ./mqtt-exporter
+      dockerfile: Dockerfile
+    container_name: mqtt-exporter
+    ports:
+      - "1887:1883"
+
 networks:
   emqx-net:
     name: emqx-net
