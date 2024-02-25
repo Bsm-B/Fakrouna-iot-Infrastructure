@@ -15,3 +15,10 @@ providers:
       path: "/grafana-dashboard-emqx5-ee"
     orgI": 1
     type: "file"
+  - name: GENICAL
+    folder: "FAKROUNA"
+    folderUid: ""
+    options:
+      path: "/grafana-dashboard-fakrouna-extraction"
+    orgI": 1
+    type: "file"

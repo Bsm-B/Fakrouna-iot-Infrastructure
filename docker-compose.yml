@@ -62,6 +62,7 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=public
     volumes:
       - $PWD/emqx-exporter/config/grafana-template/EMQX5-enterprise:/grafana-dashboard-emqx5-ee
+      - $PWD/grafana-dashboards:/grafana-dashboard-fakrouna-extraction
       - $PWD/grafana-dashboards:/grafana-dashboard-oil-extraction
       - $PWD/grafana-provisioning/dashboard.yaml:/etc/grafana/provisioning/dashboards/dashboard.yaml
       - $PWD/grafana-provisioning/datasource.yaml:/etc/grafana/provisioning/datasources/datasource.yaml
